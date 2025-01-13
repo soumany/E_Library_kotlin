@@ -6,9 +6,9 @@
     </style>
 
     <style name="Theme.ELibrary_Kotlin" parent="Base.Theme.ELibrary_Kotlin" />
-    <style name="Theme.App.splashScreen" parent="Theme.SplashScreen">
-        <item name="android:windowSplashScreenBackground" tools:ignore="NewApi">@color/black</item>
-        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">@drawable/library</item>
-        <item name="postSplashScreenTheme">@style/Base.Theme.ELibrary_Kotlin</item>
-    </style>
+<!--    <style name="Theme.App.splashScreen" parent="Theme.SplashScreen">-->
+<!--        <item name="android:windowSplashScreenBackground" tools:ignore="NewApi">@color/black</item>-->
+<!--        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">@drawable/library</item>-->
+<!--        <item name="postSplashScreenTheme">@style/Base.Theme.ELibrary_Kotlin</item>-->
+<!--    </style>-->
 </resources>
