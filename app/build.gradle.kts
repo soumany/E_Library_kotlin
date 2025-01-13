@@ -26,16 +26,15 @@ android {
             )
         }
     }
-<<<<<<< Updated upstream
-=======
     buildFeatures{
         viewBinding = true
     }
     buildFeatures {
         viewBinding = true
     }
-
->>>>>>> Stashed changes
+    buildFeatures{
+        viewBinding = true
+    }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -77,4 +76,14 @@ dependencies {
     implementation (libs.squareup.converter.gson)
     implementation (libs.gson)
     implementation(libs.glide)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+// Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
+// RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.3.1")
+
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        />
+    <item android:title="Book"
+        android:id="@+id/book"
+        android:icon="@drawable/book"
+        />
+    <item android:title="Store"
+        android:id="@+id/store"
+        android:icon="@drawable/books_store"
+        />
+    <item android:title="Share"
+        android:id="@+id/share"
+        android:icon="@drawable/share_book"
+        />
+    <item android:title="Save"
+        android:id="@+id/save"
+        android:icon="@drawable/bookmark"
+        />
+</menu>

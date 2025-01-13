@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".Payment_Screen.PaymentActivity">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="386dp"
+            android:layout_height="300dp"
+            android:src="@drawable/cc"/>
+
+        <EditText
+            android:id="@+id/CardNumber"
+            android:padding="15dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="card_number"
+            android:background="@drawable/border_edit_text"/>
+
+        <EditText
+            android:id="@+id/CardHolderNumber"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="card_holder_number"
+            android:background="@drawable/border_edit_text"/>
+
+        <EditText
+            android:id="@+id/ExpirationCard"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="expiration_card"
+            android:background="@drawable/border_edit_text"/>
+
+        <EditText
+            android:id="@+id/Cvv"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="cvv"
+            android:background="@drawable/border_edit_text"/>
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_marginTop="30dp"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:text="done"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginBottom="60dp"/>
+
+
+    </LinearLayout>
+</ScrollView>
