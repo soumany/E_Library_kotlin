@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Include your toolbar layout -->
+        <include
+            android:layout_marginBottom="20dp"
+            android:id="@+id/includeToolbar"
+            layout="@layout/toobar_home_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewCart"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/btnPaynow"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:text="pay_now"
+            android:background="@drawable/btn_little_rounded"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</ScrollView>
