@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Setting_Screen.SettingFragment"
+        android:orientation="vertical">
+
+        <!-- Include your toolbar layout -->
+        <include
+            android:id="@+id/includeToolbar"
+            layout="@layout/toobar_home_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/defaultprofile"/>
+
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:background="@drawable/buttonnav_rounded"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewUsername"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Display name"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="350dp"
+                    android:layout_height="60dp"
+                    android:text="LogOut"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <!--            <Space-->
+                <!--                android:layout_width="40dp"-->
+                <!--                android:layout_height="wrap_content"/>-->
+
+                <!--            <Button-->
+                <!--                android:id="@+id/btnYourBook"-->
+                <!--                android:layout_width="160dp"-->
+                <!--                android:layout_height="60dp"-->
+                <!--                android:text="YourBook"-->
+                <!--                android:textStyle="bold"-->
+                <!--                android:textSize="20sp"/>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</ScrollView>
