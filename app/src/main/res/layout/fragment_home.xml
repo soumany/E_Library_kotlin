@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_Screen.HomeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Include your toolbar layout -->
+        <include
+            android:layout_marginBottom="20dp"
+            android:id="@+id/includeToolbar"
+            layout="@layout/toobar_home_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleViewBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General Book"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="17dp"
+                android:padding="5dp"/>
+
+            <Button
+                android:backgroundTint="@color/white"
+                android:textColor="#1010de"
+                android:layout_marginStart="150dp"
+                android:id="@+id/txtSeeAllGeneralBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="17dp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="30dp"
+            android:id="@+id/recycleViewCategory1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="General Book"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="17dp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:textColor="#1010de"
+                android:layout_marginStart="150dp"
+                android:id="@+id/txtSeeAllComicBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="17dp"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/recycleViewCategory2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Home Fragment"
+        android:textSize="26dp"
+        android:gravity="center"
+        />
+
+</FrameLayout>
